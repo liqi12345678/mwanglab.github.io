@@ -246,22 +246,22 @@ font-size:      1em;
 /*设置图片的属性*/
 
 .human1{
-position: absolute;
+position: relative;
 left: 0px;
 top: 70px;
 }
 .human2{
-position: absolute;
+position: relative;
 left: 0px;
 top: 22px;
 }
 .human3{
-position: absolute;
+position: relative;
 left: 0px;
 top: 106px;
 }
 .virus2{
-position: absolute;
+position: relative;
 left: 0px;
 top: 70px;
 }
