@@ -20,7 +20,9 @@
 
 	<!-- Custom styles for this template -->
 	<link href="./css/carousel.css" rel="stylesheet">
-	
+<style>
+.divcss5-c p{margin-left: 2em;}
+</style>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -48,12 +50,7 @@
 			<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li><a href="index.html">Home</a></li>
-				<li class="dropdown"><a href="research.html">Research</a>
-				<div class="dropdown-content">
-					<p><a href="human.html">Human genetics</a></p>
-					<p><a href="virus.html">Virus genetics</a></p>
-				</div>
-				</li>
+				<li><a href="research.html">Research</a></li>
 				<li><a href="people.html">People</a></li>
 				<li><a href="teaching.html">Teaching</a></li>
 				<li><a href="contact.html">Join Us</a></li>
@@ -124,20 +121,38 @@
 		<!-- We develop and apply statistical methods to investigate complex traits such as <span style="color: #006dcc"><em>diabetes</em></span>, <span style="color: #006dcc"><em>schizophrenia</em></span> and others.
 		We have devised novel tests to increase statistical power of large scale genome wide association studies, and developed new methods to estimate <span style="color: #5cb85c"><em>polygenic risk scores</em></span>, and <span style="color: #5cb85c"><em>heritabilities</em></span> of various traits. -->
 		<ul>
-		<font size="4" color="lightdark"><strong>W-test: </strong></font><font size="4" color="lightdark">The W-test is a non-parametric statistical tests for main effect or interaction effect association testing. It has the advantage of adopting a data-adaptive probability distribution, such that more accurate p-values can be efficiently obtained. Thus, the method is robust to various genetic architectures and reduced sample size to main association testing power. (R package: wtest)</font>
+		<font style="color:blue;font-size:18px"><strong>W-test: </strong>The idea of this epistasis testing is that if two or more genetic variables contribute to disease outcome, then their joint probability distribution in the disease group and control group shall be different. The idea was incepted in 2009 and discussed with Prof. Inchi Hu, Albert Lo, and Shaw-Hwa Lo. It was full developed in 2013 together with Rui Sun as her PhD thesis. The W-test is thus proposed as a non-parametric approach to compare the distributional difference, by aggregating the log of odds ratios in the contingency table cells. In addition to the classical framework of aggregating the odds ratio using a chi-square like statistic, we added in another property allowing the degrees of freedom of the statistic to be estimated from the working data set by bootstrapping samples. This data-adaptive probability distribution is very useful for non-parametric testing in genetic datasets, which genetic architecture varies in data with different sample size and population structure. For example, testing interaction effect of (X1, X2) in a two-way contingency table (3x3) will form a chi-square degrees of freedom (df) = 8. This integer df would be adopted across all types of data sets. While in the W-test, the df is boostrap estimated and may take continuous values. Therefore, more accurate p-values can be efficiently obtained, making the test more robust to various genetic architectures and reduced sample size to main association testing power. (R package: wtest)</font>
 		<p></p>
-		<p size="3">Wang MH, Sun R, Guo J, Weng H, Lee J, Hu I, Sham PC, Zee BC. A fast and powerful W-test for pairwise epistasis testing. Nucleic acids research. 2016 Jul 8;44(12):e115-.</p>
-		<p size="3">Sun R, Weng H, Wang MH*. W-Test for Genetic Epistasis Testing. Methods In Molecular Biology. 2021; 45-53.</p>
-		<p size="3">Sun R, Weng H, Hu I, Guo J, Wu WK, Zee BC, Wang MH*. A W-test collapsing method for rare variant association testing in exome sequencing data. Genetic Epidemiology. 2016 Nov;40(7):591-6.</p>
-		<p size="3">Sun R, Weng H, Xia X, Chong K, Zee BC, Wang MH*.  Gene-methylation epistasis analysis by a W-test identified enriched signals of neuronal genes in patients undergone lipid control treatment. BMC Proceedings</p>
+		<div class="divcss5-c">
+		<p style= "font-size:12px">Wang MH, Sun R, Guo J, Weng H, Lee J, Hu I, Sham PC, Zee BC. A fast and powerful W-test for pairwise epistasis testing. Nucleic acids research. 2016 Jul 8;44(12):e115-.<a target="_blank" href="https://doi.org/10.1093/nar/gkw347">https://doi.org/10.1093/nar/gkw347</a></p>
+		<p style= "font-size:12px">Sun R, Weng H, Wang MH*. W-Test for Genetic Epistasis Testing. Methods In Molecular Biology. 2021; 45-53.</p>
+		<p style= "font-size:12px">Sun R, Weng H, Hu I, Guo J, Wu WK, Zee BC, Wang MH*. A W-test collapsing method for rare variant association testing in exome sequencing data. Genetic Epidemiology. 2016 Nov;40(7):591-6.</p>
+		<p style= "font-size:12px">Sun R, Weng H, Xia X, Chong K, Zee BC, Wang MH*.  Gene-methylation epistasis analysis by a W-test identified enriched signals of neuronal genes in patients undergone lipid control treatment. BMC Proceedings</p></ul>
+		</p>
+		</div>
+		<div class="col-md-5">
+			<img class="human1 featurette-image img-responsive center-block" src="./graphics/h1.png" alt="Generic placeholder image">
+		</div>
+	</div>
+	<div class="row featurette">
+		<div class="col-md-7">
+		<p class="lead">
+		<!-- Colored version -->
+		<!-- We develop and apply statistical methods to investigate complex traits such as <span style="color: #006dcc"><em>diabetes</em></span>, <span style="color: #006dcc"><em>schizophrenia</em></span> and others.
+		We have devised novel tests to increase statistical power of large scale genome wide association studies, and developed new methods to estimate <span style="color: #5cb85c"><em>polygenic risk scores</em></span>, and <span style="color: #5cb85c"><em>heritabilities</em></span> of various traits. -->
+		<ul>
+		<font style="color:blue;font-size:18px"><strong>Zoom-focus algorithm (ZFA):  </strong>We observed that a gene may consists of thousands of rare variants in whole genome sequencing dataset, however, only a small fraction of these variants are functional. This method is devised to identify the optimal testing genomic segments enriched with clustered signals in a given gene. This method was incepted on the flight to IGES meeting in 2015, when genetic association testing in WGS/WES data was a major issue. It was fully developed together with Haoyi Weng as his PhD thesis. The method is inspired by observing stars: first a grid-search is performed by eye-piece to identify a rough position of the target object, and then adjust the focal length of telescope to get a high resolution image. Looking for informative loci in deep sequencing genome is similar. A key component of this method is how to adjust for multiple-testing issue.  (R package: zfa)</font>
+		<p></p>
+		<div class="divcss5-c">
+		<p style= "font-size:12px">Wang MH, Weng H, Sun R, Lee J, Wu WK, Chong KC, Zee BC. A Zoom-Focus algorithm (ZFA) to locate the optimal testing region for rare variant association tests. Bioinformatics. 2017 Aug 1;33(15):2330-6.</p>
+		</div>
 		</ul>
 		</p>
 		</div>
 		<div class="col-md-5">
-			<img class="featurette-image img-responsive center-block" src="./graphics/h3.png" alt="Generic placeholder image">
+			<img class="human2 featurette-image img-responsive center-block" src="./graphics/h3.png" alt="Generic placeholder image">
 		</div>
 	</div>
-
 	<hr class="featurette-divider">
 
 	<div class="row featurette">
@@ -146,24 +161,24 @@
 		<p class="lead">
 		<ul>
 		<li><strong>Disease prediction in genotype data:</strong></li>
-		<font size="4" color="lightdark">The Prism Vote (PV): The PV takes a novel view the trait of an individual as a composite risk from subpopulations, in which stratum-specific predictors can be formed in data of more homogeneous genetic structure. Since each individual is represented by a composition of subpopulation memberships, the framework enables individualized risk characterization.</font>
+		<font style="color:blue;font-size:18px">The Prism Vote (PV): The PV takes a novel view the trait of an individual as a composite risk from subpopulations, in which stratum-specific predictors can be formed in data of more homogeneous genetic structure. Since each individual is represented by a composition of subpopulation memberships, the framework enables individualized risk characterization.</font>
 		<p></p>
-        <p size="3">2019 US Provisional Patent No. 62/915,459, 19/MED/902, filed on 15 October 2019, Prediction Models Incorporating Stratification of Data.Wang MH, Xia X, Zee BCY.</p>
-		<p size="3">Xia X, Sun R, Zhang Y, Wei Y, Li Q, Chong KCC, Wu WKK, Zee BZY, Tang H, WANG MH. A Prism Vote Method for Individualized Risk Prediction of Traits in Genome-wide Sequencing Data of Multiple Populations. In revision</p>
+        <p style= "font-size:12px">2019 US Provisional Patent No. 62/915,459, 19/MED/902, filed on 15 October 2019, Prediction Models Incorporating Stratification of Data.Wang MH, Xia X, Zee BCY.</p>
+		<p style= "font-size:12px">Xia X, Sun R, Zhang Y, Wei Y, Li Q, Chong KCC, Wu WKK, Zee BZY, Tang H, WANG MH. A Prism Vote Method for Individualized Risk Prediction of Traits in Genome-wide Sequencing Data of Multiple Populations. In revision</p>
 		<li><strong>Trait classification in gene expression data:</strong></li>
-		<p size="3">Xia X, Weng H, Sun R, Chong K, Zee BC*, Wang MH* Incorporating methylation genome information improves prediction accuracy for drug treatment responses. BMC Genetics. 2018 Sep;19(1):78.</p>
-		<p size="3">Wang MH, Lo SH, Zheng T and Hu I (2012) A Classification Method Incorporating Interactions among Variables for High-dimensional Data. Bioinformatics (2012) 28 (21): 2834-2842</p>
+		<p style= "font-size:12px">Xia X, Weng H, Sun R, Chong K, Zee BC*, Wang MH* Incorporating methylation genome information improves prediction accuracy for drug treatment responses. BMC Genetics. 2018 Sep;19(1):78.</p>
+		<p style= "font-size:12px">Wang MH, Lo SH, Zheng T and Hu I (2012) A Classification Method Incorporating Interactions among Variables for High-dimensional Data. Bioinformatics (2012) 28 (21): 2834-2842</p>
 		<li><strong>Prediction in breath mass spectrometry:</strong></li>
-		<p size="3">Wang MH, Chong K, Chung H, Storer M, Pickering J, Endre Z, Lau S, Kwok C, Lai M, Zee BC. Use of a Least Absolute Shrinkage and Selection Operator (LASSO) Model to Selected Ion Flow Tube Mass Spectrometry (SIFT-MS) Analysis of Exhaled Breath to Predict the Efficacy of Dialysis. Journal of Breath Research. 2016 Sep 28;10(4):046004.</p>
-		<p size="3">Wang MH, Lau SY, Kwok C, Chong K, Lai M, Chung AH, Ho C, Szeto C, Zee BC. Estimation of clinical parameters of chronic kidney disease (CKD) by exhaled breath full-scan mass spectrometry data and Iterative PCA with Intensity Screening (IPS) algorithm. Journal of Breath Research. 2017 Aug 21;11(3):036007.</p>
+		<p style= "font-size:12px">Wang MH, Chong K, Chung H, Storer M, Pickering J, Endre Z, Lau S, Kwok C, Lai M, Zee BC. Use of a Least Absolute Shrinkage and Selection Operator (LASSO) Model to Selected Ion Flow Tube Mass Spectrometry (SIFT-MS) Analysis of Exhaled Breath to Predict the Efficacy of Dialysis. Journal of Breath Research. 2016 Sep 28;10(4):046004.</p>
+		<p style= "font-size:12px">Wang MH, Lau SY, Kwok C, Chong K, Lai M, Chung AH, Ho C, Szeto C, Zee BC. Estimation of clinical parameters of chronic kidney disease (CKD) by exhaled breath full-scan mass spectrometry data and Iterative PCA with Intensity Screening (IPS) algorithm. Journal of Breath Research. 2017 Aug 21;11(3):036007.</p>
 		<li><strong>Book Chapters:</strong></li>
-		<p size="3">Statistical methods for disease risk prediction with genotype data, with Xia X, Zhang Y, Wei Y.  To appear. Springer Nature. 2022-</p>
-		<p size="3"> “Genetic Test, Risk Prediction Model, and Genetic Counselling", with Haoyi Weng, Book Title: Translational Informatics in Smart Healthcare, Springer, 2017</p>
+		<p style= "font-size:12px">Statistical methods for disease risk prediction with genotype data, with Xia X, Zhang Y, Wei Y.  To appear. Springer Nature. 2022-</p>
+		<p style= "font-size:12px">"Genetic Test, Risk Prediction Model, and Genetic Counselling", with Haoyi Weng, Book Title: Translational Informatics in Smart Healthcare, Springer, 2017</p>
 		</ul>
 		</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
-		<img class="featurette-image img-responsive center-block" src="./graphics/h4.png" alt="Generic placeholder image">
+		<img class="human3 featurette-image img-responsive center-block" src="./graphics/h4.png" alt="Generic placeholder image">
 		</div>
 	</div>
 

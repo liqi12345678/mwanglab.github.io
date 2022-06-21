@@ -243,3 +243,25 @@ font-size:      1em;
     -ms-interpolation-mode: nearest-neighbor;
     -webkit-font-smooting:  antialiased;
 }
+/*设置图片的属性*/
+
+.human1{
+position: absolute;
+left: 20px;
+top: 70px;
+}
+.human2{
+position: absolute;
+left: 20px;
+top: 22px;
+}
+.human3{
+position: absolute;
+left: 20px;
+top: 106px;
+}
+.virus2{
+position: absolute;
+left: 20px;
+top: 70px;
+}
