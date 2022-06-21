@@ -248,7 +248,7 @@ font-size:      1em;
 .human1{
 position: relative;
 left: 0px;
-top: 70px;
+top: 20px;
 }
 .human2{
 position: relative;
@@ -258,10 +258,10 @@ top: 22px;
 .human3{
 position: relative;
 left: 0px;
-top: 106px;
+top: 60px;
 }
 .virus2{
 position: relative;
 left: 0px;
-top: 70px;
+top: 20px;
 }
