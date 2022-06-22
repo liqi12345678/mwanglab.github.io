@@ -220,7 +220,7 @@ font-size:      1em;
 }
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 .dropdown-content {
   display: none;
