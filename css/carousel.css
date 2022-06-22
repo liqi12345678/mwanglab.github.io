@@ -34,6 +34,7 @@ ul {
 	  background-color: rgba(28,28,28,0.7);
 	  border-bottom: 0px;
 }
+
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -219,12 +220,12 @@ font-size:      1em;
 }
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #202020;
+  background-color: rgba(28,28,28,0.7);
   min-width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
