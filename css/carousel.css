@@ -221,6 +221,7 @@ font-size:      1em;
 .dropdown {
   position: relative;
   display: block;
+  z-index: 30;
 }
 .dropdown-content {
   display: none;
