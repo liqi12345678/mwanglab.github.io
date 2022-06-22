@@ -30,6 +30,10 @@ ul {
 -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar{
+	  background-color: rgba(255,255,255,0.1);
+	  border-bottom: 0px;
+}
 .navbar-wrapper {
   position: absolute;
   top: 0;
