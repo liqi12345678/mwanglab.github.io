@@ -20,7 +20,9 @@
 
 	<!-- Custom styles for this template -->
 	<link href="./css/carousel.css" rel="stylesheet">
-	
+<style>
+.divcss5-c p{margin-left: 2em;}
+</style>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -56,7 +58,7 @@
 				</div>
 				<li><a href="people.html">People</a></li>
 				<li><a href="teaching.html">Teaching</a></li>
-				<li class="active"><a href="contact.html">Join Us</a></li>
+				<li><a href="contact.html">Join Us</a></li>
 			</ul>
 			</div><!--/.navbar-collapse -->
 		</div>
@@ -65,7 +67,7 @@
 	</div>
 	</div>
 
-		<!-- Carousel
+	<!-- Carousel
 	================================================== -->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 	<!-- Indicators -->
@@ -109,32 +111,34 @@
 		<span class="sr-only">Next</span>
 	</a>
 	</div><!-- /.carousel -->
-	
-	<!-- Marketing messaging and featurettes
-	================================================== -->
-	<!-- Wrap the rest of the page in another container to center all the content. -->
 
 	<div class="container marketing">
-
 	<!-- START THE FEATURETTES -->
-	<div class="page-header" id="contact">
-		<h1>Other information</h1>
+	<div class="page-header" id="human genetics">
+		<h1>Other methods</h1>
 	</div>
+		<h2>Online calculator of positive predicted values (PPV)<span class="text-muted"></span></h2>
 	<div class="row featurette">
 		<div class="col-md-7">
-		<p style="font-size:24px"><strong>Address: </strong><span class="text-muted"></span></p>
-		<p class="lead">Office:  5/F, School of Public Health, Prince of Wales Hospital, Shatin, New Territories, Hong Kong SAR</p>
-		<p style="font-size:24px"><strong>Collaborations: </strong><span class="text-muted"></span></p>
+
 		<p class="lead">
-		<p style="font-size:21px">-&nbsp;&nbsp;Academic</a></p>
-		<p style="font-size:21px">-&nbsp;&nbsp;Potential students</a></p>
-		<p style="font-size:21px">-&nbsp;&nbsp;Industrial partners</p>
+		<ul>
+		<p style="font-size:18px">Given a positive or negative outcome of COVID-19 diagnostic test, what is the probability of infecting SARS-CoV-2?</p>
+		<p style= "color:rgb(95,95,191);font-size:18px"><a style="text-decoration:underline" href="DAT.html" target="_blank"">COVID-19 Diagnostic Assessment Tool</a></p>
+		<p style="font-size:18px">This online calculator estimates the probability of infection using the Bayesian probability, given the background information of prevalence of COVID-19, diagnostic test sensitivity and specificity (Cao et al. 2021, Royal Society of Open Science). Particularly, it considers the scenarios when repeated tests were performed by the same or alternative kits (PCR, rapid antigen test, etc).</p>
+		<p style="font-size:18px">This calculator was developed in the early stage of COVID-19 pandemic, as a response to facilitate accurate diagnostic testing by various platforms.</p>
+		<div class="divcss5-c">
+		<p style= "color:rgb(95,95,191);font-size:14px">Sun R, Weng H, Wang MH*. W-Test for Genetic Epistasis Testing. Methods In Molecular Biology. 2021; 45-53.</p>
 		</p>
-		<p class="lead">Please directly contact Dr. Maggie Wang (maggiew @ cuhk.edu.hk) .</p>
+		</ul>
+		</div>
+		<div class="col-md-5">
+			<img class="human1 featurette-image img-responsive center-block" src="./graphics/o1.png" alt="Generic placeholder image">
 		</div>
 	</div>
 
 	<hr class="featurette-divider">
+
 
 	<!-- /END THE FEATURETTES -->
 

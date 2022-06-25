@@ -57,6 +57,7 @@
 				<div class="dropdown-content">
 					<p><a href="human.html">Human genetics</a></p>
 					<p><a href="virus.html">Virus genetics</a></p>
+					<p><a href="othermethods.html">Other methods</a></p>
 				</div>
 				<li><a href="people.html">People</a></li>
 				<li><a href="teaching.html">Teaching</a></li>
@@ -128,24 +129,20 @@
 		<!-- We develop and apply statistical methods to investigate complex traits such as <span style="color: #006dcc"><em>diabetes</em></span>, <span style="color: #006dcc"><em>schizophrenia</em></span> and others.
 		We have devised novel tests to increase statistical power of large scale genome wide association studies, and developed new methods to estimate <span style="color: #5cb85c"><em>polygenic risk scores</em></span>, and <span style="color: #5cb85c"><em>heritabilities</em></span> of various traits. -->
 		<ul>
-		<font style="color:blue;font-size:18px">Traditionally, vaccine effectiveness (VE) is estimated only after the population has been vaccinated and a portion of subjects have been infected.  We establish the VE prediction method by modelling the relationship between VE and genetic distance of circulating viruses against vaccine strain, which allows immediate in silico prediction of VE before a new genetic variant enters a population.</font>
-		<font style="color:blue;font-size:18px">The method enables timely evaluation of existing cohort vaccine protection to facilitate public health policy making and vaccine strain selection.</font>
-		<p></p>
-		<li><strong>COVID-19 VE prediction</strong></li>
-		<div class = "divcss5-c">
-		<p style= "font-size:12px">Cao L, Lou J, Chan SY, Zheng H, Liu C, Zhao S, Li Q, Mok KP, Chan SY, Chan RWY, Chong MKC, Wu WKK, Chen Z, Wong ELY, Chan PKY, Zee BCY, Yeoh EK, Wang MH* (2022) Rapid evaluation of COVID-19 vaccine effectiveness against symptomatic infection with SARS-CoV-2 variants by analysis of genetic distance. Nature Medicine.</p>
-		<p style="color:rgb(91, 155, 213);font-size:12px">(Prediction accuracy on symptomatic infection after second dose of COVID-19 vaccine reaches 95% on independent test data)</p>
-		</div>
+		<p style="font-size:18px">Traditionally, vaccine effectiveness (VE) is estimated only after the population has been vaccinated and a portion of subjects have been infected.  We establish the VE prediction method by modelling the relationship between VE and genetic distance (GD) of circulating viruses against vaccine strain, which allows immediate in silico prediction of VE before a new genetic variant enters a population.</p>
+		<p style="font-size:18px">The method enables timely evaluation of existing cohort vaccine protection to facilitate public health policy making and vaccine strain selection.</p>
 		<p></p>
 		<li><strong>Influenza VE prediction</strong></li>
 		<div class = "divcss5-c">
-		<p style= "font-size:12px">Cao L, Lou J, Zhao S, Chan RW, Chan M, Wu WK, Chong MK, Zee BC, Yeoh EK, Wong SY, Chan PK, Wang MH*. In silico prediction of influenza vaccine effectiveness by sequence analysis. Vaccine. 2021 Feb 12;39(7):1030-4.</p>
-		<p style="color:rgb(91, 155, 213);font-size:12px">(the first methodology framework developed for influenza vaccine)</p>
+		<p style="font-size:16px">The initial statistical framework of VE-GD relationship is developed for influenza vaccine (Cao et al, 2021, Vaccine). One major issue in this study is determining the key mutations influencing VE, and aggregation model of the multivalent vaccine. Many of the challenge in modelling influenza vaccine haven’t emerged for the COVID-19 vaccines.</p>
+		<p style= "color:rgb(95,95,191);font-size:14px">Cao L, Lou J, Zhao S, Chan RW, Chan M, Wu WK, Chong MK, Zee BC, Yeoh EK, Wong SY, Chan PK, Wang MH*. In silico prediction of influenza vaccine effectiveness by sequence analysis. Vaccine. 2021 Feb 12;39(7):1030-4.</p>
+		<p style= "color:rgb(95,95,191);font-size:14px">Cao L, Zhao S, Lou J, Zheng H, Chan RW, Chong MK, Chen Z, Chan PK, Zee BC, Wang MH*. Differential Influence of Age on the Relationship between Genetic Mismatch and A (H1N1) pdm09 Vaccine Effectiveness. Viruses. 2021 Apr;13(4):619</p>
 		</div>
 		<p></p>
+		<li><strong>COVID-19 VE prediction</strong></li>
 		<div class = "divcss5-c">
-		<p style= "font-size:12px">Cao L, Zhao S, Lou J, Zheng H, Chan RW, Chong MK, Chen Z, Chan PK, Zee BC, Wang MH*. Differential Influence of Age on the Relationship between Genetic Mismatch and A (H1N1) pdm09 Vaccine Effectiveness. Viruses. 2021 Apr;13(4):619</p>
-		<p style="color:rgb(91, 155, 213);font-size:12px">(expanding the VE prediction for influenza considering age groups)</p>
+		<p style="font-size:16px">Based on the primary model we established for the influenza vaccines, we expand the framework for COVID-19 VE prediction. Unlike the influenza vaccines that are mostly manufactured by egg-based manufacture platforms, the COVID-19 vaccines adopt diversified technologies, which is the main variation to control in the modelling process. Meanwhile, analysis of SARS-CoV-2 genome benefits from the abundancy of datasets and the number of VE studies. The prediction accuracy by the proposed VE-GD model on independent validation dataset reached 95%.</p>
+		<p style= "color:rgb(95,95,191);font-size:14px">Cao L, Lou J, Chan SY, Zheng H, Liu C, Zhao S, Li Q, Mok KP, Chan SY, Chan RWY, Chong MKC, Wu WKK, Chen Z, Wong ELY, Chan PKY, Zee BCY, Yeoh EK, Wang MH* (2022) Rapid evaluation of COVID-19 vaccine effectiveness against symptomatic infection with SARS-CoV-2 variants by analysis of genetic distance. Nature Medicine.<a style="text-decoration:underline" target="_blank" href="https://rdcu.be/cPNdp">https://rdcu.be/cPNdp</a></p>
 		</div>
 		</ul>
 		</p>
@@ -158,21 +155,24 @@
 	<hr class="featurette-divider">
 
 	<div class="row featurette">
-		<h2>Virus genome methods<span class="text-muted"></span></h2>
-		<div class="col-md-6 col-md-push-6">
+		<h2>g-measure: a summary statistic for virus mutation activities<span class="text-muted"></span></h2>
+		<div class="col-md-6">
 		<p class="lead">
 		<ul>
-		<font style="color:blue;font-size:18px">First, we hope to develop a statistical test for influential mutations contributing to population epidemics. Surprisingly, such method does not exist already!  There isn’t even a measure to summarize genetic mutation activities over the virus genome. So we proposed the g-measure, which is a weighted sum of influential mutations at a given cross-sectional sampling interval (Wang Lou et al 2021, Journal of Infection). It turns out that the g-measure can provide a pretty accurate account of the population epidemic trend.</font>
-		<li><strong>Primary method:</strong></li>
-		<p style= "font-size:12px">Wang MH, Lou J, Cao L, Zhao S, Chan RW, Chan PK, Chan MC, Chong MK, Wu WK, Wei Y, Zhang H, Zee BC, Yeoh EK (2021) Characterization of key amino acid substitutions and dynamics of the influenza virus H3N2 hemagglutinin. Journal of Infection. 2021 Oct</p>
-		<p style= "font-size:12px">2018 US Provisional Patent No. 62/687,645, 18/MED/829, 2019 PCT/CN2019/091652 Measurement and Prediction on Influenza Virus Genetic Mutation Patterns.   Wang MH, Zee BCY, Chong KC, Lou J.</p>
-		<li><strong>Applications of the g-measure:</strong></li>
-		<p style= "font-size:12px">Lou J, Zhao S, Cao L, Chong MK, Chan RW, Chan PK, Zee BC, Yeoh EK, Wang MH *. Predicting the dominant influenza A serotype by quantifying mutation activities. International Journal of Infectious Diseases. 2020 Aug 22.</p>
-		<p style= "font-size:12px">Lou J, Zheng H, Zhao S, Cao L, Wong ELY, Chen Z, Chan RWY, Chong MKC, Zee BCY, Chan PKS, Yoeh EK, Wang MH* (2022) Quantifying the effect of government interventions and virus mutations on transmission advantage during COVID-19 pandemic. Journal of Infection and Public Health.</p>
+		<p style="font-size:18px">While the human genome collected in a population exhibits a stable landscape of mutation distributions, virus genome sampled at different time points shows dynamic mutation profiles due to fast virus evolution.</p>
+		<p style="font-size:18px">Clearly, summarizing the virus mutation activities through time will provide useful information about epidemics and virus evolution. Surprisingly, such a measure wasn’t unavailable in 2010s. Therefore, we introduced the g-measure (Wang Lou et al 2021, Journal of Infection), which is simply calculated as the sum of mutation prevalence of the virus in samples collected in a given time interval t.</p>
+		<p><span style="font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;`g_t = m_t · p_t`</span></p>
+		<p style="font-size:18px">where `m` is an indicator variable (J-vector) of the key mutations over virus genome at time `t`, and `p` is the mutation prevalence in population at time `t` (J-vector). J is the genome size. Therefore, `g` summarizes overall mutation activities level in virus genome in a certain population within a given time period. The g-measure is shown to provide a good account of the population epidemic trend (see Figure in the right).</p>
+		<p style="font-size:16px"><strong>Primary method:</strong></p>
+		<p style= "color:rgb(95,95,191);font-size:14px">Wang MH, Lou J, Cao L, Zhao S, Chan RW, Chan PK, Chan MC, Chong MK, Wu WK, Wei Y, Zhang H, Zee BC, Yeoh EK (2021) Characterization of key amino acid substitutions and dynamics of the influenza virus H3N2 hemagglutinin. Journal of Infection. 2021 Oct</p>
+		<p style= "color:rgb(95,95,191);font-size:14px">2018 US Provisional Patent No. 62/687,645, 18/MED/829, 2019 PCT/CN2019/091652 Measurement and Prediction on Influenza Virus Genetic Mutation Patterns.   Wang MH, Zee BCY, Chong KC, Lou J.</p>
+		<p style="font-size:16px"><strong>Applications of the g-measure:</strong></p>
+		<p style= "color:rgb(95,95,191);font-size:14px">Lou J, Zhao S, Cao L, Chong MK, Chan RW, Chan PK, Zee BC, Yeoh EK, Wang MH *. Predicting the dominant influenza A serotype by quantifying mutation activities. International Journal of Infectious Diseases. 2020 Aug 22.</p>
+		<p style= "color:rgb(95,95,191);font-size:14px">Lou J, Zheng H, Zhao S, Cao L, Wong ELY, Chen Z, Chan RWY, Chong MKC, Zee BCY, Chan PKS, Yoeh EK, Wang MH* (2022) Quantifying the effect of government interventions and virus mutations on transmission advantage during COVID-19 pandemic. Journal of Infection and Public Health.</p>
 		</ul>
 		</p>
 		</div>
-		<div class="col-md-6 col-md-pull-6">
+		<div class="col-md-6">
 		<img class="virus2 featurette-image img-responsive center-block" src="./graphics/v2.png" alt="v2">
 		</div>
 	</div>
@@ -180,13 +180,13 @@
 	<hr class="featurette-divider">
 
 	<div class="row featurette">
-		<h2>Virus genome methods (cont’)<span class="text-muted"></span></h2>
+		<h2>Statistical identification of influential mutations: the effective mutations (EMs)<span class="text-muted"></span></h2>
 		<div class="col-md-6">
 		<p class="lead">
 		<ul>
-		<font style="color:blue;font-size:18px">With the g-measure, we can perform "feature selection" in the virus genome, to determine which mutation sets, as a function of mutation prevalence, provide a best match to population epidemics. This leads to the identification of the <strong>Effective mutations</strong> (EMs), which is a time-dependent subset of nucleotide substitutions demonstrating statistically significant association to epidemic trends (Wang Lou et al 2021). We found that 80% of these EMs for influenza A(H3N2) were in the antigenic sites, and the rest were located in the immuno-subdominant region HA2. This suggests that the statistically determined mutation sets might provide useful molecular markers for further studies.</font>
-		<p style="color:blue;font-size:18px;text-indent:2em">Indeed, the EM sites offer the "features" that are predictive to influenza vaccine effectiveness, and enabled the first VE prediction framework (Cao et al 2021, Vaccine)</p>
-		<p style="color:blue;font-size:18px;text-indent:2em">As infectious disease pathogens evolves through time to escape from population adaptive immune responses, an once "effective" mutation that gives the pathogen selective advantage in the population will not be effective forever. Therefore, we recognize the necessity to propose the quantity"<strong>Effective mutation period</strong>(EMP)”, which captures for how long the key mutations would demonstrate advantage in the host population against its immune recognition. The EMP is jointly influenced by transmission dynamics, population density, immunity profiles in the population, and other epidemiological characteristics. The g-measure is dependent on the EM and EMP, thus it can capture the rises and falls of epidemic cycles over many seasons.</p>
+		<font style="font-size:18px">With the g-measure, we can perform "feature selection" in the virus genome, to determine which mutation sets, as a function of mutation prevalence, provide a best match to population epidemics. This leads to the identification of the <strong>Effective mutations</strong> (EMs), which is a time-dependent subset of nucleotide substitutions demonstrating statistically significant association to epidemic trends (Wang Lou et al 2021)</font>
+		<p style="font-size:18px;text-indent:2em">We found that 80% of these EMs for influenza A(H3N2) HA were located  in the antigenic sites, and the rest were located in the immuno-subdominant region HA2. This suggests that the statistically determined mutation sets might provide useful molecular candidates. Indeed, the EM sites offer the “features” that are predictive to influenza vaccine effectiveness, and enabled the VE prediction framework for influenza (Cao et al 2021, Vaccine)</p>
+		<p style="font-size:18px;text-indent:2em">As infectious disease pathogens evolves through time to escape from population adaptive immune responses, an once "effective" mutation that gives the pathogen selective advantage in the population will not be effective forever. Therefore, we recognize the necessity to propose the quantity"<strong>Effective mutation period</strong>(EMP)”, which captures for how long the key mutations would demonstrate advantage in the host population against its immune recognition. The EMP is jointly influenced by transmission dynamics, population density, immunity profiles in the population, and other epidemiological characteristics. The g-measure is dependent on the EM and EMP, thus it can capture the rises and falls of epidemic cycles over many seasons.</p>
 		</ul>
 		</p>
 		</div>
@@ -194,18 +194,20 @@
 		<img class="virus2 featurette-image img-responsive center-block" src="./graphics/v3.png" alt="v4">
 		</div>
 	</div>
+	
+	<hr class="featurette-divider">
+	<h2>Predicting virus evolution: beth-1<span class="text-muted"></span></h2>
 		<div class="row featurette">
 		<div class="col-md-6">
 		<p class="lead">
 		<ul>
-		<li><strong>Prediction of influenza vaccine strains for the next epidemic season</strong></li>
-		<p style="color:blue;font-size:18px">A new method to predict influenza virus evolution and select vaccine strains for the influenza virus.</p>
-		<p style= "font-size:12px">2018 US Provisional Patent No. 62/687,645, 18/MED/829, 2019 PCT/CN2019/091652 Measurement and Prediction on Influenza Virus Genetic Mutation Patterns.Wang MH, Zee BCY, Chong KC, Lou J.</p>
-		<li><strong>Codon optimization</strong></li>
-		<p style="color:blue;font-size:18px">A new method to perform codon optimization or deoptimization preserving viral structure information, with applications in improving efficiency of virus replication and antigenicity for vaccine production.</p>
-		<p style= "font-size:12px">2021 US Provisional No: 63/283,91: Codon de-optimization or optimization using genetic architecture, Wang MH, Zheng H, Zee BCY</p>
-		<li><strong>Substitution rate estimation</strong></li>
-		<p style="color:blue;font-size:18px">We develop a new probability framework to estimate virus substitution rate by genomic region, fast and effective, without building phylogeny.</p>
+		<p style="font-size:18px"><strong>Prediction of influenza vaccine strains for the next epidemic season</strong></p>
+		<p style="font-size:16px">A new method to predict influenza virus evolution and select vaccine strains for the influenza virus.</p>
+		<p style= "color:rgb(95,95,191);font-size:14px">2018 US Provisional Patent No. 62/687,645, 18/MED/829, 2019 PCT/CN2019/091652 Measurement and Prediction on Influenza Virus Genetic Mutation Patterns.Wang MH, Zee BCY, Chong KC, Lou J.</p>
+		<p style="font-size:18px"><strong>Estimation for evolutionary rate</strong></p>
+		<p style="font-size:16px">We develop a new probability framework to estimate virus substitution rate by genomic region, fast and effective, without building phylogeny.</p>
+		<br />
+		<p style="font-size:16px">More to be introduced…</p>
 		</ul>
 		</p>
 		</div>
@@ -213,7 +215,21 @@
 		<img class="virus2 featurette-image img-responsive center-block" src="./graphics/v4.png" alt="v4">
 		</div>
 	</div>
-	
+		<hr class="featurette-divider">
+		
+	<h2>Codon optimization / de-optimization<span class="text-muted"></span></h2>
+		<div class="row featurette">
+		<div class="col-md-6">
+		<p class="lead">
+		<ul>
+		<p style="font-size:16px">A new method to perform codon optimization or deoptimization preserving viral structure information, with applications in improving efficiency of virus replication and antigenicity for vaccine production.</p>
+		<p style= "color:rgb(95,95,191);font-size:14px">2021 US Provisional No: 63/283,91: Codon de-optimization or optimization using genetic architecture, Wang MH, Zheng H, Zee BCY</p>
+		<br />
+		<p style="font-size:16px">More to be introduced…</p>
+		</ul>
+		</p>
+		</div>
+	</div>
 	<hr class="featurette-divider">
 
 	<!-- /END THE FEATURETTES -->
@@ -236,5 +252,6 @@
 	<script src="./js/bootstrap.min.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="./js/ie10-viewport-bug-workaround.js"></script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
 </body>
 </html>
